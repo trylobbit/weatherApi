@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="../static/css/basicStyles.css" th:href="@{/css/basicStyles.css}" rel="stylesheet"/>
+
+</head>
+<body>
+<div>
+    <p>Show weather for:</p>
+    <form th:action="@{/home}" th:object="${city}" method="POST">
+        <table>
+            <tr>
+                <td><p>City name: </p></td>
+                <td><input type="text" id="cityChoose" name="title" th:value="*{title}"/></td>
+
+                <td><p>Days: </p></td>
+                <td><input type="number" id="cityChoose" name="amountOfDays" th:value="*{amountOfDays}" th:max="5"
+                           th:min="1"/>
+                    <button name="Submit" value="Search" type="Submit" th:text="Search"></button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</body>
+</html>

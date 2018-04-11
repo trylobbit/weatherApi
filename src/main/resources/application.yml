@@ -1,0 +1,8 @@
+weather:
+  woeidUrl: https://www.metaweather.com/api/location/search/?query=
+  resultUrl: https://www.metaweather.com/api/location/
+cache:
+  expiringTime: 3
+  maxSize: 200
+
+

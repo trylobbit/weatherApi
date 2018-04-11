@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="../static/css/basicStyles.css" th:href="@{/css/basicStyles.css}" rel="stylesheet"/>
+
+</head>
+<body>
+<div>
+
+
+    <table id="weather_table">
+        <tr>
+            <th> date</th>
+            <th>min temp</th>
+            <th>max temp</th>
+            <th>air pressure</th>
+        </tr>
+        <tr th:each="weath : ${listWeather}">
+            <td th:text="${weath.applicable_date}">applicableDate</td>
+            <td th:text="${weath.min_temp}">minTemp</td>
+            <td th:text="${weath.max_temp}">maxTemp</td>
+            <td th:text="${weath.air_pressure}">airPressure</td>
+        </tr>
+    </table>
+
+</div>
+
+
+</body>
+</html>

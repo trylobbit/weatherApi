@@ -1,0 +1,16 @@
+div {
+    border: 2px;
+
+    background-color: #dddddd;
+
+}
+#weather_table{
+    text-align: center;
+    margin: auto;
+    width: 49%;
+    background-color:white;
+    border-spacing: 10px;
+}
+tr{
+    border-bottom: 1px solid #ddd;
+}

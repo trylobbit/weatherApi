@@ -23,9 +23,9 @@ public class WeatherService {
 
         Integer woeid = weatherApiCommunicator.getWoeid(city);
 
-            WeatherJson weatherJson = weatherApiCommunicator.getAllWeatherForCity(woeid);
+        WeatherJson weatherJson = weatherApiCommunicator.getAllWeatherForCity(woeid);
 
-            return weatherJson.getConsolidatedWeather(days);
-        }
+        return weatherJson.getConsolidatedWeather(days);
+    }
 
 }

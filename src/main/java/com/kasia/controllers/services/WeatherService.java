@@ -20,7 +20,6 @@ public class WeatherService {
 
     public List<Weather> provideWeather(String city, Integer days) throws Exception {
 
-
         Integer woeid = weatherApiCommunicator.getWoeid(city);
 
         WeatherJson weatherJson = weatherApiCommunicator.getAllWeatherForCity(woeid);
